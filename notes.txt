@@ -1,0 +1,11 @@
+1. npm init //enter given info it creates package.json file
+2. make .gitignore file using git ignore generator create code and paste in file
+3.make .env file this file does not push in git
+
+in package.json file :
+type:modele used for import syntax
+
+nodemon install:
+npm i -D nodemon
+
+set:- "dev": "nodemon src/index.js"

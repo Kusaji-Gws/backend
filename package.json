@@ -1,0 +1,19 @@
+{
+  "name": "my_backend",
+  "version": "1.0.0",
+  "description": "made by omkar gawas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "om"
+  ],
+  
+  "author": "omkar gws",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
