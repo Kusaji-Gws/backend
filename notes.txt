@@ -8,4 +8,8 @@ type:modele used for import syntax
 nodemon install:
 npm i -D nodemon
 
-set:- "dev": "nodemon src/index.js"
+pritter install:
+npm i -D pritter
+
+set:- "dev": "nodemon src/index.js"//used for reload index.js every time
+
