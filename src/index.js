@@ -1,10 +1,11 @@
 // require('dotenv').config({path:'./env'})
 import dotenv from 'dotenv'
 import mongoose from "mongoose";
-import { DB_NAME } from "./constants.js";
 import connectDB from "./db/db_connection.js";
+import express from 'express';
+const app=express();
 dotenv.config({
-    path:'./env'
+    path:'./.env'
 })
 
 connectDB()

@@ -1,15 +1,16 @@
 import mongoose from "mongoose";
-import { DB_NAME } from "../constants.js";
 
 const connectDB=async()=>{
     try {
-        const connectionInstance=await mongoose.connect(`mongodb+srv://omi:omkar@cluster0.9q3tm.mongodb.net/${DB_NAME}`)
-        console.log(`\n MongoDB connected ! DB Host :${connectionInstance.connection.host}`)
+        // await mongoose.connect(`mongodb+srv://omi:omkar@cluster0.9q3tm.mongodb.net/`)
+        await mongoose.connect(`mongodb+srv://akshay:akshay15@cluster0.xmgi3.mongodb.net/`);
+        console.log(`\n MongoDB connected ! DB Host `)
+        console.log("connected");
     
     }
     catch(error){
         console.log("mongodb connection error",error);
-        // process.exit(1)
+        
     }
 }
 
