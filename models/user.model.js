@@ -15,7 +15,7 @@ const userSchema=new mongoose.Schema({
     },
     role:{
         type:String,
-        enum:["student","requiter"],
+        enum:["student","recuiter"],
         required:true
     },
     profile:{
@@ -25,7 +25,7 @@ const userSchema=new mongoose.Schema({
         skills:[{type:String}],
         resume:{type:String},//urrl to resume file
         resumeOriginalName:{type:String},
-        company:{type:mongoose.Schema.type.ObjectId,
+        company:{type:mongoose.Schema.Types.ObjectId,
             ref:"Company"},
         profilePhoto:{
             type:String,
@@ -33,4 +33,5 @@ const userSchema=new mongoose.Schema({
         }
 
     }
-})
+},{timestamps:true});
+export const User=mongoose.model("User",userSchema);
